@@ -1,3 +1,3 @@
-FROM thannan/haskell-dev-box:latest
+FROM haskell:8
 
-RUN stack install hakyll --resolver lts-8.21
+RUN stack update && stack install hakyll
